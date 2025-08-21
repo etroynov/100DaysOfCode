@@ -4,7 +4,11 @@ package org.example;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Day01 day01 = new Day01();
+//        Day01 day01 = new Day01();
+//        Day02 day02 = new Day02();
+        Day03 day03 = new Day03();
+
+        day03.init();
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
     }
