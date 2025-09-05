@@ -1,11 +1,25 @@
 use std::io;
 
 fn cel_to_far() {
-    println!("cel_to_far");
+    println!("Enter temperature");
+
+    let mut str = String::new();
+
+    io::stdin().read_line(&mut str).expect("");
+
+    let temp: f64 = match str.trim().parse() {
+        Ok(num) => num,
+        Err(_) => {
+            println!("Invalid input value");
+            return;
+        }
+    };
+
+    println!("{:.2}C -> {:.2}F", temp, (temp * 9.0 / 5.0) + 32.0);
 }
 
 fn far_to_cel() {
-    println!("fat_to_cel");
+    println!("Enter temperature");
 }
 
 fn main() {
